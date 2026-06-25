@@ -1,0 +1,360 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #FEFAE0;
+}
+
+.screen1{
+    width: 100%;
+    display: flex;
+}
+
+.kid1{
+    margin-left: -20%;
+    position: absolute;
+    width: 50%;
+}
+
+.kid2{
+    position: absolute;
+    margin-left: 80%;
+    width: 50%;
+}
+
+.titleboy,
+.titlegirl{
+    width: 85%;
+}
+
+.logo-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.logo {
+    width: 60%;
+}
+
+.logotype-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "BigText";
+    src: url("../Fonts/justbreath/JustBreatheObl7.otf") format("opentype");
+}
+
+.screen2 {
+    margin-top: 20%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.armlet {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.armlet-title {
+    font-family: "BigText";
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 150%;
+    line-height: 1.3;
+    color: black;
+}
+
+.threadofbracelet {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 25%;
+    z-index: 10;
+}
+
+.beats {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.beat1,
+.beat2,
+.beat3,
+.beat4,
+.beat5,
+.beat6 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.beat1 img,
+.beat2 img,
+.beat3 img,
+.beat4 img,
+.beat5 img,
+.beat6 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5,
+.bubble6 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2.2% 3%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.beat1:hover .bubble1,
+.beat2:hover .bubble2,
+.beat3:hover .bubble3,
+.beat4:hover .bubble4,
+.beat5:hover .bubble5,
+.beat6:hover .bubble6 {
+    opacity: 1;
+}
+
+.bubble1 h3,
+.bubble2 h3,
+.bubble3 h3,
+.bubble4 h3,
+.bubble5 h3,
+.bubble6 h3 {
+    margin: 0 0 4% 0;
+    font-size: 1.1vw;
+    font-family: Arial
+}
+
+.bubble1 p,
+.bubble2 p,
+.bubble3 p,
+.bubble4 p,
+.bubble5 p,
+.bubble6 p {
+    margin: 0;
+    font-size: 1vw;
+    line-height: 1.3;
+    font-family: Arial
+}
+
+.beat1 {
+    width: 6%;
+    top: 18%;
+    left: 35%;
+}
+
+.beat2 {
+    width: 6%;
+    top: 30%;
+    left: 47%;
+}
+
+.beat3 {
+    width: 6%;
+    top: 18%;
+    left: 58%;
+}
+
+.beat4 {
+    width: 6%;
+    top: 62%;
+    left: 58%;
+}
+
+.beat5 {
+    width: 6%;
+    top: 73%;
+    left: 47%;
+}
+
+.beat6 {
+    width: 6%;
+    top: 62%;
+    left: 35%;
+}
+
+.bubble1 {
+    width: 260%;
+    bottom: 140%;
+    left: -180%;
+}
+
+.bubble2 {
+    width: 280%;
+    bottom: 180%;
+    left: -110%;
+}
+
+.bubble3 {
+    width: 240%;
+    bottom: 140%;
+    left: 60%;
+}
+
+.bubble4 {
+    width: 260%;
+    top: 140%;
+    left: 60%;
+}
+
+.bubble5 {
+    width: 250%;
+    top: 150%;
+    left: -90%;
+}
+
+.bubble6 {
+    width: 250%;
+    top: 140%;
+    left: -170%;
+}
+
+.bubble1::after,
+.bubble2::after,
+.bubble3::after,
+.bubble4::after,
+.bubble5::after,
+.bubble6::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #3b2b2b;
+}
+
+.bubble1::after {
+    height: 70px;
+    right: 8%;
+    bottom: -70px;
+    transform: rotate(55deg);
+}
+
+.bubble2::after {
+    height: 55px;
+    left: 50%;
+    bottom: -55px;
+}
+
+.bubble3::after {
+    height: 70px;
+    left: 8%;
+    bottom: -70px;
+    transform: rotate(-55deg);
+}
+
+.bubble4::after {
+    height: 70px;
+    left: 10%;
+    top: -70px;
+    transform: rotate(55deg);
+}
+
+.bubble5::after {
+    height: 55px;
+    left: 50%;
+    top: -55px;
+}
+
+.bubble6::after {
+    height: 70px;
+    right: 10%;
+    top: -70px;
+    transform: rotate(-55deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.screen3 {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 0;
+  margin-bottom: 5%;
+}
+
+.score {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-family: "BigText";
+  font-size: 24px;
+  color: #000000;
+  z-index: 20;
+}
+
+.game1 {
+  position: relative;
+  width: 838px;
+  height: 607px;
+  overflow: hidden;
+  background: url("../Pics/Bicycle/backgame1.png") center / cover no-repeat;
+}
+
+.girl {
+  position: absolute;
+  left: 40px;
+  bottom: 18px;
+  width: 200px;
+  height: 200px;
+  background: url("../Pics/Bicycle/bicyclegirl.png") center / contain no-repeat;
+  z-index: 10;
+}
+
+.ball {
+  position: absolute;
+  width: 38px;
+  height: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 8;
+}
+
+.game-popup {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.game-popup.show {
+  display: flex;
+}
+
+.game-popup__content {
+  background: #f7c9da;
+  color: #3d2b1f;
+  padding: 22px 30px;
+  border-radius: 18px;
+  font-family: "BigText";
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
